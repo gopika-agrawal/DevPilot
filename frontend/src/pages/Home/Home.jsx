@@ -7,6 +7,7 @@ import {
 
 import { Link } from "react-router-dom";
 import ModeToggle from "../../components/ui/ModeToggle";
+import { getGithubLoginUrl } from "../../lib/api";
 
 function Home() {
   const features = [
@@ -60,7 +61,10 @@ function Home() {
           </p>
 
           <div className="hero-actions">
-            <a href="#" className="github-button">
+            <a
+                href={getGithubLoginUrl()}
+                className="github-button"
+            >
               <FolderGit2 size={18} />
               Continue with GitHub
               <ArrowRight size={18} />
