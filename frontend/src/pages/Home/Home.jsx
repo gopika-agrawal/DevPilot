@@ -6,6 +6,9 @@ import {
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
+
+import { DevPilotIcon } from "../../components/icons/DevPilotIcon";
+import { BrandMark } from "../../components/layout/AppShell";
 import ModeToggle from "../../components/ui/ModeToggle";
 import { getGithubLoginUrl } from "../../lib/api";
 
@@ -31,17 +34,15 @@ function Home() {
   return (
     <div className="home-page">
       <header className="home-header">
-        <div className="brand">
-          <div className="brand-icon">
-            <span>DP</span>
-          </div>
-          <span>DevPilot</span>
-        </div>
+        <BrandMark />
 
         <div className="header-actions">
           <ModeToggle />
 
-          <Link to="/login" className="signin-button">
+          <Link
+            to="/login"
+            className="signin-button"
+          >
             Sign in
           </Link>
         </div>
@@ -50,27 +51,33 @@ function Home() {
       <main className="home-main">
         <section className="hero">
           <div className="hero-icon">
-            <span>DP</span>
+            <DevPilotIcon />
           </div>
 
           <h1>DevPilot</h1>
 
           <p>
-            Connect GitHub, index any repository, and chat with your codebase
-            using retrieval-augmented answers and citations.
+            Connect GitHub, index any repository, and
+            chat with your codebase using
+            retrieval-augmented answers and citations.
           </p>
 
           <div className="hero-actions">
             <a
-                href={getGithubLoginUrl()}
-                className="github-button"
+              href={getGithubLoginUrl()}
+              className="github-button"
             >
               <FolderGit2 size={18} />
-              Continue with GitHub
+
+              <span>Continue with GitHub</span>
+
               <ArrowRight size={18} />
             </a>
 
-            <Link to="/login" className="outline-button">
+            <Link
+              to="/login"
+              className="outline-button"
+            >
               See how it works
             </Link>
           </div>
@@ -81,7 +88,10 @@ function Home() {
             const Icon = feature.icon;
 
             return (
-              <div className="feature-card" key={feature.title}>
+              <div
+                className="feature-card"
+                key={feature.title}
+              >
                 <div className="feature-icon">
                   <Icon size={21} />
                 </div>

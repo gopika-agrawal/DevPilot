@@ -4138,3 +4138,194 @@ html.dark .feature-icon {
   background: #27272a;
   color: #e4e4e7;
 }
+
+/* =========================
+   Auth Callback
+   ========================= */
+
+.auth-callback {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  background: #f7f8fc;
+  color: #52525b;
+}
+
+.auth-callback p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.auth-callback-spinner {
+  animation: auth-callback-spin 0.9s linear infinite;
+}
+
+@keyframes auth-callback-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html.dark .auth-callback {
+  background: #09090b;
+  color: #a1a1aa;
+}
+
+
+/* =================================
+   DARK MODE - REPOSITORY CARDS
+================================= */
+
+html.dark .repo-card {
+  background: #111113;
+  border-color: #27272a;
+  color: #f4f4f5;
+}
+
+html.dark .repo-card-header {
+  border-bottom-color: #27272a;
+}
+
+html.dark .repo-card-footer {
+  border-top-color: #27272a;
+}
+
+/* Repository name */
+html.dark .repo-name {
+  color: #f4f4f5;
+}
+
+/* GitHub username / owner */
+html.dark .repo-owner {
+  color: #a1a1aa;
+}
+
+/* Description */
+html.dark .repo-description {
+  color: #a1a1aa;
+}
+
+/* Language / branch tags */
+html.dark .repo-tag {
+  color: #d4d4d8;
+  background: #18181b;
+  border-color: #3f3f46;
+}
+
+/* GitHub link */
+html.dark .github-link {
+  color: #a1a1aa;
+}
+
+html.dark .github-link:hover {
+  color: #ffffff;
+  background: #18181b;
+}
+
+/* Language name */
+html.dark .language-badge-label {
+  color: #e4e4e7;
+}
+
+/* Repository metadata */
+html.dark .repo-meta {
+  color: #a1a1aa;
+}
+
+/* Indexing box */
+html.dark .indexing-box {
+  background: #18181b;
+  border-color: #27272a;
+}
+
+html.dark .indexing-info {
+  color: #a1a1aa;
+}
+
+/* Chat button */
+html.dark .chat-button {
+  color: #e4e4e7;
+  background: #27272a;
+  border-color: #3f3f46;
+}
+
+html.dark .chat-button:hover {
+  background: #3f3f46;
+}
+
+
+
+/* =================================
+   DARK MODE - OVERVIEW
+================================= */
+
+html.dark .overview-stat-card {
+  background: #111113;
+  border-color: #27272a;
+}
+
+html.dark .overview-stat-label {
+  color: #a1a1aa;
+}
+
+html.dark .overview-stat-value {
+  color: #f4f4f5;
+}
+
+html.dark .overview-stat-hint {
+  color: #a1a1aa;
+}
+
+html.dark .overview-stat-icon {
+  color: #a1a1aa;
+  background: #27272a;
+}
+
+/* Section headings */
+html.dark .overview-section-header h2 {
+  color: #f4f4f5;
+}
+
+html.dark .overview-section-header p {
+  color: #a1a1aa;
+}
+
+html.dark .overview-view-all {
+  color: #60a5fa;
+}
+
+/* Empty state */
+html.dark .overview-empty-card {
+  background: #111113;
+  border-color: #27272a;
+}
+
+html.dark .overview-empty-card h3 {
+  color: #f4f4f5;
+}
+
+html.dark .overview-empty-card p {
+  color: #a1a1aa;
+}
+
+/* Workspace status */
+html.dark .workspace-status-card {
+  background: #111113;
+  border-color: #27272a;
+}
+
+html.dark .workspace-status-row {
+  border-bottom-color: #27272a;
+}
+
+html.dark .workspace-status-row > span:first-child {
+  color: #a1a1aa;
+}
+
+html.dark .workspace-status-value {
+  color: #e4e4e7;
+  background: #27272a;
+}

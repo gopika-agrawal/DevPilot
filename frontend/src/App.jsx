@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Overview from "./pages/Dashboard/Overview";
 import Settings from "./pages/Dashboard/Settings";
 import Chat from "./pages/Chat/Chat";
+import AuthCallback from "./pages/Auth/AuthCallback";
 
 function App() {
   return (
@@ -13,6 +14,11 @@ function App() {
       <Route path="/" element={<Home />} />
 
       <Route path="/login" element={<Login />} />
+
+      <Route
+        path="/auth/callback"
+        element={<AuthCallback />}
+      />
 
       <Route
         path="/dashboard"
